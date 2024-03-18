@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="topNav" id="dropDownClicked">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="topNav-right"><a href="#signup">Sign Up</a></li>
+        <li class="topNav-right"><a href="#signin">Sign In</a></li>
+        <li class="drop_down">
+          <a href="javascript:void(0);" onclick="dropDownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container" id="container-color">
+      <div>
+        <div class="header">
+          <h1>My Website</h1>
+          <h2>Browse through our courses</h2>
+          <!-- Changed to h2 -->
+        </div>
+        <div>
+          <form>
+            <h3>Enter Your Name</h3>
+            <input type="text" placeholder="name" />
+            <h3>Enter Password</h3>
+            <input type="password" placeholder="password" class="input2" />
+          </form>
+        </div>
+      </div>
+      <div class="videoContainer">
+        <iframe
+          width="360"
+          height="250"
+          src="https://www.youtube.com/embed/Ymkl0t0FOcw?si=9-aIDUOCityvNV1D"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <section class="secondSection">
+      <h1 style="font-size: 2em; padding-top: 1em">HillSlopes WebSite</h1>
+      <div id="imageWrapper">
+        <div class="imageDiv">
+          <img src="think_icon.png" alt="icon" height="100" width="100" />
+          <!-- Adjusted height and width -->
+          <h2>Chat with me</h2>
+          <p class="pText">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum labore
+            ullam suscipit quis corporis, amet nam optio dolores eveniet
+            perspiciatis atque? Qui, architecto molestiae.
+          </p>
+        </div>
+        <div class="imageDiv">
+          <img src="think_icon.png" alt="icon" height="100" width="100" />
+          <!-- Adjusted height and width -->
+          <h2>Chat with me</h2>
+          <p class="pText">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum labore
+            ullam suscipit quis corporis, amet nam optio dolores eveniet
+            perspiciatis atque? Qui, architecto molestiae.
+          </p>
+        </div>
+        <div class="imageDiv">
+          <img src="think_icon.png" alt="icon" height="100" width="100" />
+          <!-- Adjusted height and width -->
+          <h2>Chat with me</h2>
+          <p class="pText">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum labore
+            ullam suscipit quis corporis, amet nam optio dolores eveniet
+            perspiciatis atque? Qui, architecto molestiae.
+          </p>
+        </div>
+      </div>
+      <button class="blue_button">Learn More</button>
+    </section>
+    <section>
+      <div class="videoSection">
+        <article style="width: 60%; display: block; padding-bottom: 1em">
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            tempore beatae ipsa asperiores qui vel voluptatem ducimus totam
+            doloribus commodi a sunt. Impedit voluptate similique ratione?
+            Molestiae at fugiat ab?</span
+          >
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            tempore beatae ipsa asperiores qui vel voluptatem ducimus totam
+            doloribus commodi a sunt. Impedit voluptate similique ratione?
+            Molestiae at fugiat ab?</span
+          >
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            tempore beatae ipsa asperiores qui vel voluptatem ducimus totam
+            doloribus commodi a sunt. Impedit voluptate similique ratione?
+            Molestiae at fugiat ab?</span
+          >
+        </article>
+        <video width="400" height="200">
+          <source src="week1.mp4" type="video/mp4" />
+          This video type is not supported by your browser
+        </video>
+      </div>
+    </section>
+    <div>
+      <footer class="footerSec">
+        <div class="footer1">
+          <h5 style="color: wheat">CONTACT US</h5>
+          <ul class="footerList">
+            <li>About</li>
+            <li>Home</li>
+            <li>Career</li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="footer1">
+          <h5 style="color: wheat">CONTACT US</h5>
+          <ul class="footerList">
+            <li>About</li>
+            <li>Home</li>
+            <li>Career</li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="footer1">
+          <h5 style="color: wheat">CONTACT US</h5>
+          <ul class="footerList">
+            <li>About</li>
+            <li>Home</li>
+            <li>Career</li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="footer1">
+          <h5 style="color: wheat">CONTACT US</h5>
+          <ul class="footerList">
+            <li>About</li>
+            <li>Home</li>
+            <li>Career</li>
+            <li>News</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function dropDownMenu() {
+        var x = document.getElementById("dropDownClicked");
+
+        if (x.className === "topNav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topNav";
+        }
+      }
+    </script>
+  </body>
+</html>
